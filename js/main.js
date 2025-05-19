@@ -53,10 +53,10 @@ $(function () {
                     $('.play_interface').addClass('on')
 
                     $('.web_play').css({
-                        'background': `url(../images/image${idx + 1}n.jpg) no-repeat center/cover`
+                        'background': `url(../images/image${idx + 1}_1.jpg) no-repeat center/cover`
                     })
                     $('.play_interface_title').css({
-                        'background': `url(../images/image${idx + 1}title.jpg) no-repeat center 90%/cover`
+                        'background': `url(../images/image${idx + 1}_title.jpg) no-repeat center 90%/cover`
                     })
                     $('.wrap_web .play_info').find('p').text(infoSrc[idx])
                     $('.play_top .title').hide()
