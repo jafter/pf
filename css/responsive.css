@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+@media screen and (max-width: 1300px) {
+    html {
+        font-size: 15px;
+    }
+
+    .play_interface_left {
+        width: 26%;
+    }
+
+    .play_info_box {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 14px;
+    }
+
+    .play_interface_left {
+        width: 27%;
+    }
+
+    .play_info_box {
+        width: 64%;
+    }
+
+    .play_interface_btn {
+        padding: 2rem 0;
+    }
+
+    .name {
+        left: 70%;
+    }
+
+    .gallery li:hover~.name {
+        left: 75%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .name {
+        left: 68%;
+    }
+
+    .gallery li:hover~.name {
+        left: 73%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+
+    .gallery {
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    .gallery li {
+        transition: none;
+        position: relative;
+        transform: skewX(0deg);
+        left: 0;
+    }
+
+    .gallery li .content {
+        height: 10vh;
+        bottom: 0;
+        background-color: transparent;
+        text-align: left;
+        padding-left: 2%;
+    }
+
+    .gallery li .content h2 {
+        transform: skewX(0deg);
+    }
+
+    .gallery li .content P {
+        display: none;
+    }
+
+    .gallery li:hover {
+        flex: 1;
+    }
+
+    .gallery li:nth-child(6) {
+        flex: 3;
+        pointer-events: all;
+        background: url('../images/image6_1.jpg') no-repeat center/cover;
+    }
+
+    .gallery li:nth-child(6) h2 {
+        margin: 0;
+        color: white;
+        transform: skewX(0deg);
+    }
+
+    .gallery li:nth-child(6) .content {
+        display: none;
+    }
+
+
+    .profile_box_text,
+    .profile_box {
+        display: none;
+    }
+
+    .icon {
+        height: 10vh;
+        display: flex;
+    }
+
+    .wrap_web {
+        padding: 0;
+    }
+
+    .web_play .play_top {
+        padding: 2rem;
+    }
+
+    .web_play .play_top2 {
+        padding: 2rem;
+        left: -100%;
+    }
+
+    .web_play .play_top3 {
+        padding: 2rem;
+        left: -100%;
+    }
+
+    .play_interface {
+        bottom: 10%;
+    }
+
+    .play_interface_left {
+        display: none;
+    }
+
+    .play_info_box {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .play_info_box .play_info {
+        display: block;
+    }
+
+    .play_info p {
+        font-size: 1.5rem;
+    }
+
+    .web_iframe {
+        left: 0;
+        top: 6rem;
+        height: 50%;
+    }
+
+    .profile_box,
+    .profile_box_text {
+        bottom: -50px;
+    }
+
+    .mobile_profile {
+        margin-top: 1rem;
+    }
+
+    .name {
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .name h2 {
+        color: white;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    html {
+        font-size: 11px;
+    }
+
+    .web_iframe {
+        top: 6rem;
+    }
+}

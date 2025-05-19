@@ -1,0 +1,490 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'portfolio';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'portfolio';
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+}
+iframe {
+    border: 0;
+}
+.gallery {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+
+}
+
+.gallery li {
+    flex: 1;
+    transition: all .5s;
+    position: relative;
+    transform: skewX(-20deg);
+}
+
+.gallery li:hover {
+    flex: 3;
+}
+
+.gallery li:nth-child(1) {
+    background: url('../images/image1.jpg') no-repeat center/cover;
+
+}
+
+.gallery li:nth-child(2) {
+    background: url('../images/image2.jpg') no-repeat center/cover;
+
+}
+
+.gallery li:nth-child(3) {
+    background: url('../images/image3.jpg') no-repeat center/cover;
+
+}
+
+.gallery li:nth-child(4) {
+    background: url('../images/image4.jpg') no-repeat center/cover;
+
+}
+
+.gallery li:nth-child(5) {
+    background: url('../images/image5.jpg') no-repeat center/cover;
+
+}
+
+.gallery li:nth-child(6) {
+    flex: 1.7;
+    pointer-events: none;
+    /* margin: auto 0; */
+}
+.name {
+    position: absolute;
+    top: 70%;
+    left: 72.5%;
+    z-index: 9999;
+    transition: all .4s;
+}
+.name h2 {
+    color: black;
+    font-size: 3rem;
+    margin: 1rem;
+    transition: all .4s;
+}
+
+.name h2 span::after {
+    content: '';
+    width: 3px;
+    height: 40px;
+    display: inline-block;
+    background-color: black;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.gallery li .content {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 200px;
+    bottom: -200px;
+
+}
+
+.gallery li .content h2,
+.gallery li .content p {
+    transform: skewX(20deg);
+}
+
+.gallery li:hover .content {
+    bottom: 0;
+}
+.gallery li:hover ~ .name {
+    left: 77.5%;
+}
+.gallery li:hover ~ .name h2 {
+    font-size: 2.5rem;
+}
+.profile_box_text {
+    position: absolute;
+    height: 50px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    cursor: pointer;
+    animation: profile 2s linear infinite alternate;
+    font-size: 1rem;
+}
+
+@keyframes profile {
+    from {
+        right: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    to {
+        right: 1rem;
+        font-size: 1.4rem;
+    }
+}
+
+.profile_box {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background: linear-gradient(to bottom right, white 50%, #888);
+    right: 0;
+    bottom: 0;
+    transition: all .4s;
+}
+
+.profile_box_text:hover+.profile_box {
+    width: 150px;
+    height: 300px;
+}
+
+.wrap_web {
+    width: 100%;
+    height: 100vh;
+    padding: 60px;
+    background-color: black;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    opacity: 0;
+}
+
+.wrap_web.on {
+    opacity: 1;
+    left: 0;
+}
+
+.web_play {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    background: url('#') no-repeat center/cover;
+    overflow: hidden;
+}
+
+.web_play .play_top,
+.play_top2,
+.play_top3,
+.play_interface {
+    position: absolute;
+}
+
+.web_play .play_top,
+.play_top2,
+.play_top3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.play_top2 {
+    left: -100%;
+    top: 0;
+    z-index: 999;
+}
+
+.play_top2.on {
+    left: 0;
+}
+
+.play_top3 {
+    left: -100%;
+    top: 0;
+    z-index: 999;
+}
+
+.play_top3.on {
+    left: 0;
+}
+
+.web_play .play_top div,
+.play_top2 div,
+.play_top3 div {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.play_interface {
+    left: -100%;
+    top: 63%;
+    width: 100%;
+    height: 31%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.play_interface.on {
+    left: 0;
+}
+
+.play_interface_left {
+    width: 24%;
+    height: 100%;
+}
+
+.play_interface_left {
+    display: flex;
+    flex-direction: column;
+}
+
+.play_interface_title {
+    width: 100%;
+    height: 50%;
+    background: url('../images/image1_title.jpg') no-repeat center 90%/cover;
+}
+
+.play_interface_btn {
+    display: flex;
+    height: 50%;
+    padding: 2.5rem 0;
+    justify-content: space-evenly;
+}
+
+.play_interface_left button {
+    display: inline-block;
+    width: 46.5%;
+    font-size: 1.5rem;
+    font-family: 'portfolio';
+    background-color: transparent;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 5px 0px white;
+    cursor: pointer;
+}
+
+.play_info_box {
+    width: 67%;
+    height: 100%;
+    margin: 0;
+}
+
+.play_info {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    overflow: auto;
+}
+
+.play_info p {
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.web_iframe {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: 9;
+}
+
+.web_iframe.on {
+    opacity: 1;
+    left: 0;
+}
+
+.web_iframe iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_interface {
+    position: absolute;
+    left: -100%;
+    top: 15%;
+    width: 100%;
+    height: 78%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.profile_interface.on {
+    left: 0;
+}
+
+.profile_interface_left {
+    width: 24%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.profile_interface_title {
+    width: 100%;
+    height: 20%;
+    background: url('../images/image1_title.jpg') no-repeat center 90%/cover;
+}
+
+.profile_interface_character {
+    display: flex;
+    height: 80%;
+    padding: 2.5rem 0;
+    justify-content: space-evenly;
+    background: url('../images/KakaoTalk_20250403_093258332.gif') no-repeat center/cover
+}
+
+.profile_interface_right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 5px gray;
+    width: 24%;
+    height: 100%;
+    padding: 15px;
+    color: black;
+    font-family: 'portfolio';
+    font-size: 1.5vw;
+    margin-right: 10%;
+}
+
+.profile_interface_name {
+    width: 100%;
+    height: 15%;
+    font-size: 2vw;
+    padding-top: 1.5rem;
+}
+
+.profile_interface_profile {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.phone {
+    width: 90%;
+    height: 30%;
+    margin: 0 auto;
+    box-shadow: -1px 0 0 #999;
+    padding: 10px;
+    line-height: 2.7vw;
+}
+
+.history {
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    box-shadow: 1px 0 0 #999;
+    padding: 10px;
+    text-align: right;
+    line-height: 2.7vw;
+}
+
+.icon {
+    width: 90%;
+    height: 10%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.icon div {
+    width: 50px;
+    height: 50px;
+}
+
+.icon div:nth-child(1) {
+    background-color: #999;
+}
+
+.icon div:nth-child(2) {
+    background-color: #777;
+}
+
+.icon div:nth-child(3) {
+    background-color: #555;
+}
+
+.icon div:nth-child(4) {
+    background-color: #333;
+}
+
+.icon div:nth-child(5) {
+    background-color: #111;
+}
+
+.mobile_profile {
+    position: absolute;
+    left: -110%;
+    top: 63%;
+    width: 100%;
+    height: 31%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    box-shadow: 5px 5px 5px gray;
+    color: black;
+}
+
+.mobile_profile_name {
+    font-size: 2rem;
+    width: 100%;
+    height: 15%;
+}
+
+.mobile_profile_content {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: -1px 0 0 #999;
+}
+
+.mobile_profile_content p {
+    margin: 2px;
+    display: block;
+    padding-left: .5rem;
+    align-items: center;
+
+}
