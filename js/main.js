@@ -122,7 +122,7 @@ $(function () {
         $('.wrap_web .play_info').find('p').text('profiletext')
         $('.play_top2').removeClass('on')
         $('.web_play').css({
-            'background': 'url(../images/image6_1.jpg) no-repeat center/cover'
+            'background': 'url(images/image6_1.jpg) no-repeat center/cover'
         })
         $('.play_top .title').find('p').text('Profile')
         $('.wrap_web').addClass('on')
