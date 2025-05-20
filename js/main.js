@@ -53,10 +53,10 @@ $(function () {
                     $('.play_interface').addClass('on')
 
                     $('.web_play').css({
-                        'background': `url(../images/image${idx + 1}_1.jpg) no-repeat center/cover`
+                        'background': `url(images/image${idx + 1}_1.jpg) no-repeat center/cover`
                     })
                     $('.play_interface_title').css({
-                        'background': `url(../images/image${idx + 1}_title.jpg) no-repeat center 90%/cover`
+                        'background': `url(images/image${idx + 1}_title.jpg) no-repeat center 90%/cover`
                     })
                     $('.wrap_web .play_info').find('p').text(infoSrc[idx])
                     $('.play_top .title').hide()
@@ -67,7 +67,7 @@ $(function () {
                     $('.web_iframe').addClass('on')
                     $('.wrap_web .play_info').find('p').text('JINHOO LEE')
                     $('.web_play').css({
-                        'background': `url(../images/image${idx + 1}_1.jpg) no-repeat center/cover`
+                        'background': `url(images/image${idx + 1}_1.jpg) no-repeat center/cover`
                     })
                     $('.wrap_web').addClass('on')
                     $('.profile_interface .icon').css({
