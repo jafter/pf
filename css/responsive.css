@@ -92,9 +92,7 @@
         pointer-events: all;
         background: url('../images/image6_1.jpg') no-repeat center/cover;
     }
-    .gallery li:hover:nth-child(6) {
-        flex: 3;
-    }
+
     .gallery li:nth-child(6) h2 {
         margin: 0;
         color: white;
@@ -104,7 +102,9 @@
     .gallery li:nth-child(6) .content {
         display: none;
     }
-
+    .gallery li:hover~.name {
+        left: 50%;
+    }
 
     .profile_box_text,
     .profile_box {
