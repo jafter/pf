@@ -92,7 +92,7 @@
         pointer-events: all;
         background: url('../images/image6_1.jpg') no-repeat center/cover;
     }
-    .gallery li:nth-child(6):hover {
+    .gallery li:hover:nth-child(6) {
         flex: 3;
     }
     .gallery li:nth-child(6) h2 {
