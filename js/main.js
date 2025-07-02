@@ -182,3 +182,28 @@ $(function () {
         iframe.attr('src', newSrc);
     })
 })
+
+window.onpopstate = function () {
+    // 👉 인터페이스 관련 클래스 제거
+    $('.wrap_web').removeClass('on');
+    $('.web_iframe').removeClass('on');
+    $('.play_interface').removeClass('on');
+    $('.profile_interface').removeClass('on');
+    $('.play_top2').removeClass('on');
+    $('.play_top3').removeClass('on');
+
+    // 👉 YouTube 영상 정지 (autoplay 제거)
+    var iframe = $('#video');
+    if (iframe.length > 0) {
+        iframe.attr('src', '');
+    }
+
+    // 👉 갤러리 다시 보이게
+    $('.gallery').css({ 'display': 'flex' });
+
+    // 👉 profile_box_text 다시 노출
+    $('.profile_box_text').css({ 'bottom': '0' });
+
+    // 👉 모바일 프로필 초기화
+    $('.mobile_profile').css({ 'left': '-110%' });
+};
