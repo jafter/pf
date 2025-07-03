@@ -59,7 +59,7 @@
         height: 90vh;
         flex-direction: column;
     }
-
+    
     .gallery li {
         transition: none;
         position: relative;
@@ -194,5 +194,52 @@
 
     .web_iframe {
         top: 6rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .popup-inner {
+        width: 95%;
+    }
+
+    .popup-body {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .popup-left, .popup-right {
+        width: 100%;
+    }
+
+    .popup-left img {
+        width: 100%;
+        height: auto;
+    }
+
+    .popup-left .play-btn {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .popup-body.video-only iframe {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .popup-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .popup-left .play-btn {
+        font-size: 1rem;
+        padding: 0.7rem;
+    }
+
+    .popup-body.video-only iframe {
+        height: 30vh;
     }
 }
