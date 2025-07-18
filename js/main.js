@@ -3,7 +3,7 @@ $(function () {
         'https://www.youtube.com/embed/zAGVQLHvwOY?autoplay=1',
         'https://www.youtube.com/embed/-bBHT158E0s?autoplay=1',
         'https://www.youtube.com/embed/CiVnG_Phy7c?autoplay=1',
-        'https://www.youtube.com/embed/AD_kAFdzwQY?autoplay=1',
+        'https://www.youtube.com/embed/X_6qYiU8al4?autoplay=1', //르블랑 
         'https://www.youtube.com/embed/d2VN6NNa9BE?autoplay=1',
         'https://www.youtube.com/embed/qvZutqHp5RU?autoplay=1',
     ];
@@ -12,7 +12,7 @@ $(function () {
         'rkrkrkrkrk',
         'sksksksksk',
         'ekekasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasddfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdasdfaekekek',
-        'fkfkfkfkfk',
+        '게임 리그 오브 레전드(League of Legends)의 캐릭터인 르블랑 live2d 영상입니다. 화면이 깨져있는 모습이 인상적이어서 선택했습니다.',
         'akakakakak',
         'Default info text for last item'
     ];
@@ -51,8 +51,8 @@ $(function () {
         const info = infoSrc[idx] || 'Profile';
         const video = videoSrc[idx] || '';
         const title = $(this).find('h2').text();
-        const bgImg = `images/image${idx + 1}_title.jpg`;
-        const thumbImg = `images/image${idx + 1}.jpg`;
+        const bgImg = `images/image${idx + 1}_1.jpg`;
+        const thumbImg = `images/image${idx + 1}_title.jpg`;
 
         createPopup(title, info, video, bgImg, thumbImg);
     });
