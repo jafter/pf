@@ -1,17 +1,17 @@
 $(function () {
     const videoSrc = [
-        'https://www.youtube.com/embed/zAGVQLHvwOY?autoplay=1',
+        'https://www.youtube.com/embed/zAGVQLHvwOY?autoplay=1', //plugin
         'https://www.youtube.com/embed/-bBHT158E0s?autoplay=1',
-        'https://www.youtube.com/embed/CiVnG_Phy7c?autoplay=1',
+        'https://www.youtube.com/embed/CiVnG_Phy7c?autoplay=1', //title sequence
         'https://www.youtube.com/embed/X_6qYiU8al4?autoplay=1', //르블랑 
         'https://www.youtube.com/embed/d2VN6NNa9BE?autoplay=1',
         'https://www.youtube.com/embed/qvZutqHp5RU?autoplay=1',
     ];
 
     const infoSrc = [
-        'rkrkrkrkrk',
+        'After Effect Plug-in 개발 영상입니다. Plug-in의 유료화 및 파편화로 인해 기존 Plug-in을 사용하는 데 불편함이 발생하였습니다. 어플리케이션 개발자로서의 경력을 살려, 영상제작자로서 자주쓰는 기능들에 쉽게 접근할 수 있도록 개발하였습니다. visual studio, extend script를 활용하여 만들었습니다.',
         'sksksksksk',
-        'ekekasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasddfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdasdfaekekek',
+        '영화 위대한 쇼맨(The Greatest Showman)의 타이틀 시퀀스입니다. 4인 1조의 팀프로젝트로 진행되었고, 팀장으로서 참여했습니다. 씬별로 나누어 일러스트부터 모션까지 한명씩 담당하였고, 저는 인트로와 서커스 장면 중 일부(0:00 ~ 0:00)를 담당하였습니다.',
         '게임 리그 오브 레전드(League of Legends)의 캐릭터인 르블랑 live2d 영상입니다. 화면이 깨져있는 모습이 인상적이어서 선택했습니다.',
         'akakakakak',
         'Default info text for last item'
@@ -52,7 +52,7 @@ $(function () {
         const video = videoSrc[idx] || '';
         const title = $(this).find('h2').text();
         const bgImg = `images/image${idx + 1}_1.jpg`;
-        const thumbImg = `images/image${idx + 1}_title.jpg`;
+        const thumbImg = `images/image${idx + 1}_title.png`;
 
         createPopup(title, info, video, bgImg, thumbImg);
     });
@@ -64,8 +64,8 @@ $(function () {
                 <p>1988.03.30</p>
                 <p>010-5567-0000</p>
                 <p>adoljinhoo@gmail.com</p>
-                <p>00대학교 0000000</p>
-                <p>00시스템</p>
+                <p>서울대학교 기계항공공학부</p>
+                <br>
                 <p>안드로이드, ios 앱 개발</p>
                 <p>window 어플리케이션 개발</p>
             </div>`;
@@ -133,11 +133,12 @@ $(function () {
                                 <div style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">이진후 JINHOO LEE</div>
                                 ${info}
                                 <div style="margin-top: 2rem; display: flex; gap: 0.3rem;">
-                                    <div style="width: 30px; height: 30px; background: #999;"></div>
-                                    <div style="width: 30px; height: 30px; background: #666;"></div>
-                                    <div style="width: 30px; height: 30px; background: #444;"></div>
-                                    <div style="width: 30px; height: 30px; background: #222;"></div>
-                                    <div style="width: 30px; height: 30px; background: black;"></div>
+                                    <div style="width: 50px; height: 50px; background: url('../images/logo_ae.png') no-repeat center/cover;"></div>
+                                    <div style="width: 50px; height: 50px; background: url('../images/logo_pr.png') no-repeat center/cover;"></div>
+                                    <div style="width: 50px; height: 50px; background: url('../images/logo_ps.png') no-repeat center/cover;"></div>
+                                    <div style="width: 50px; height: 50px; background: url('../images/logo_bl.png') no-repeat center/cover;"></div>
+                                    <div style="width: 50px; height: 50px; background: url('../images/logo_js.png') no-repeat center/cover;"></div>
+                                    <div style="width: 50px; height: 50px; background: url('../images/logo_jsx.png') no-repeat center/cover;"></div>
                                 </div>
                             </div>
                         </div>
