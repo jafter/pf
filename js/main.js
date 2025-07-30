@@ -11,7 +11,7 @@ $(function () {
     const infoSrc = [
         'After Effect Plug-in 개발 영상입니다. Plug-in의 유료화 및 파편화로 인해 기존 Plug-in을 사용하는 데 불편함이 발생하였습니다. 어플리케이션 개발자로서의 경력을 살려, 영상제작자로서 자주쓰는 기능들에 쉽게 접근할 수 있도록 개발하였습니다. visual studio, extend script를 활용하여 만들었습니다.',
         'sksksksksk',
-        '영화 위대한 쇼맨(The Greatest Showman)의 타이틀 시퀀스입니다. 4인 1조의 팀프로젝트로 진행되었고, 팀장으로서 참여했습니다. 씬별로 나누어 일러스트부터 모션까지 한명씩 담당하였고, 저는 인트로와 서커스 장면 중 일부(0:00 ~ 0:00)를 담당하였습니다.',
+        '영화 위대한 쇼맨(The Greatest Showman)의 타이틀 시퀀스입니다. 4인 1조의 팀프로젝트로 진행되었고, 팀장으로서 참여했습니다. 씬별로 나누어 일러스트부터 모션까지 한명씩 담당하였고, 저는 인트로와 서커스 장면 중 일부(0:45 ~ 0:49)를 담당하였습니다.',
         '게임 리그 오브 레전드(League of Legends)의 캐릭터인 르블랑 live2d 영상입니다. 화면이 깨져있는 모습이 인상적이어서 선택했습니다.',
         'akakakakak',
         'Default info text for last item'
@@ -79,7 +79,7 @@ $(function () {
         const isMobile = window.innerWidth < 768;
         const playButton = !isMobile && video ? '<button class="play-btn" style="padding: 0.6rem 4rem; font-size: 1.1rem; border: 2px solid white; border-radius: 4px; background: transparent; color: white; font-weight: bold;">PLAY</button>' : '';
         const thumbSection = !isMobile ? `<div style="width: 33.33%; display: flex; flex-direction: column; align-items: center; gap: 1rem; height: 100%;">
-                                <div style="width: 100%; flex: 1; background-image: url('${thumbImg}'); background-size: cover; background-position: center; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.6);"></div>
+                                <div style="width: 100%; flex: 1; background-image: url('${thumbImg}'); background-size: contain; background-position: center; background-repeat: no-repeat; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.6);"></div>
                                 ${playButton}
                             </div>` : '';
        const infoBoxStyle = isMobile 
