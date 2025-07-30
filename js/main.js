@@ -1,7 +1,7 @@
 $(function () {
     const videoSrc = [
-        'https://www.youtube.com/embed/zAGVQLHvwOY?autoplay=1', //plugin
-        'https://www.youtube.com/embed/-bBHT158E0s?autoplay=1', //japanese
+        'https://www.youtube.com/embed/h5UokQ9Z-is?autoplay=1', //plugin https://youtu.be/h5UokQ9Z-is
+        'https://www.youtube.com/embed/NhLqgDJjVpI?autoplay=1', //japanese https://youtube.com/shorts/NhLqgDJjVpI
         'https://www.youtube.com/embed/NMc4uks9lK0?autoplay=1', //title sequence
         'https://www.youtube.com/embed/X_6qYiU8al4?autoplay=1', //르블랑 
         'https://www.youtube.com/embed/d2VN6NNa9BE?autoplay=1',
@@ -10,11 +10,11 @@ $(function () {
 
     const infoSrc = [
         'After Effect Plug-in 개발 영상입니다. Plug-in의 유료화 및 파편화로 인해 기존 Plug-in을 사용하는 데 불편함이 발생하였습니다. 어플리케이션 개발자로서의 경력을 살려, 영상제작자로서 자주쓰는 기능들에 쉽게 접근할 수 있도록 개발하였습니다. visual studio, extend script를 활용하여 만들었습니다.',
-        'sksksksksk',
+        '일본어 교재 <すくすく일본어회화1>의 학습보조 영상입니다. 단어의 뜻에 맞는 일러스트를 바탕으로 한자-발음-뜻을 보여줍니다. 단어별로 텍스트 레이어를 만든 것이 아닌, 단어 script를 after effect의 footage파일로 작성하여 마커를 통해 자동으로 보여주도록 설계하였습니다.',
         '영화 위대한 쇼맨(The Greatest Showman)의 타이틀 시퀀스입니다. 4인 1조의 팀프로젝트로 진행되었고, 팀장으로서 참여했습니다. 씬별로 나누어 일러스트부터 모션까지 한명씩 담당하였고, 저는 인트로와 서커스 장면 중 일부(0:45 ~ 0:49)를 담당하였습니다.',
         '게임 리그 오브 레전드(League of Legends)의 캐릭터인 르블랑 live2d 영상입니다. 화면이 깨져있는 모습이 인상적이어서 선택했습니다.',
         'akakakakak',
-        'Default info text for last item'
+        '이진후\n\nadoljinhoo@gmail.com\n\n서울대학교\n기계항공공학부\n\n안드로이드, ios 어플리케이션 개발\nWindow 어플리케이션 개발'
     ];
 
     const spanEl = document.querySelector('.name h2 span');
@@ -61,9 +61,8 @@ $(function () {
         const title = 'PROFILE';
         const info = `
             <div style="line-height: 2rem">
-                <p>1988.03.30</p>
-                <p>010-5567-0000</p>
                 <p>adoljinhoo@gmail.com</p>
+                <br>
                 <p>서울대학교 기계항공공학부</p>
                 <br>
                 <p>안드로이드, ios 앱 개발</p>
@@ -83,8 +82,8 @@ $(function () {
                                 ${playButton}
                             </div>` : '';
        const infoBoxStyle = isMobile 
-            ? "width: 100%; background: rgba(0,0,0,0.6); padding: 1rem; border-radius: 8px; color: white; font-size: 1.2rem; height: 30vh; overflow-y: auto; word-break: break-word; white-space: normal; align-self: flex-end;"
-            : "flex: 1; background: rgba(0,0,0,0.6); padding: 1rem; border-radius: 8px; color: white; font-size: 1.2rem; height: 100%; display: flex; align-items: flex-start; justify-content: flex-start; overflow-y: auto; word-break: break-word; white-space: normal;";
+            ? "width: 100%; background: rgba(0,0,0,0.6); padding: 1rem; border-radius: 8px; color: white; font-size: 1.2rem; height: 30vh; overflow-y: auto; word-break: break-word; white-space: pre-line; align-self: flex-end;"
+            : "flex: 1; background: rgba(0,0,0,0.6); padding: 1rem; border-radius: 8px; color: white; font-size: 1.2rem; height: 100%; display: flex; align-items: flex-start; justify-content: flex-start; overflow-y: auto; word-break: break-word; white-space: pre-line;";
 
         const iframeSection = isMobile && video ? `<iframe src="${video}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; height: 40vh; border-radius: 8px; margin-bottom: 10vh;"></iframe>` : '';
 
