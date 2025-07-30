@@ -1,11 +1,11 @@
 $(function () {
     const videoSrc = [
         'https://www.youtube.com/embed/zAGVQLHvwOY?autoplay=1', //plugin
-        'https://www.youtube.com/embed/-bBHT158E0s?autoplay=1',
+        'https://www.youtube.com/embed/-bBHT158E0s?autoplay=1', //japanese
         'https://www.youtube.com/embed/NMc4uks9lK0?autoplay=1', //title sequence
         'https://www.youtube.com/embed/X_6qYiU8al4?autoplay=1', //르블랑 
         'https://www.youtube.com/embed/d2VN6NNa9BE?autoplay=1',
-        'https://www.youtube.com/embed/qvZutqHp5RU?autoplay=1',
+        'https://www.youtube.com/embed/qvZutqHp5RU?autoplay=1', //interview
     ];
 
     const infoSrc = [
