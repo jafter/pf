@@ -4,8 +4,8 @@ $(function () {
         'https://www.youtube.com/embed/NhLqgDJjVpI?autoplay=1', //japanese https://youtube.com/shorts/NhLqgDJjVpI
         'https://www.youtube.com/embed/NMc4uks9lK0?autoplay=1', //title sequence
         'https://www.youtube.com/embed/X_6qYiU8al4?autoplay=1', //르블랑 
-        'https://www.youtube.com/embed/d2VN6NNa9BE?autoplay=1',
-        'https://www.youtube.com/embed/MInB4ziuCGQ?autoplay=1', //interview https://youtu.be/MInB4ziuCGQ
+        'https://www.youtube.com/embed/H8jSDsJ3shw?autoplay=1', //인터뷰 https://youtube.com/shorts/H8jSDsJ3shw
+        'https://www.youtube.com/embed/H8jSDsJ3shw?autoplay=1', //interview https://youtube.com/shorts/H8jSDsJ3shw
     ];
 
     const infoSrc = [
