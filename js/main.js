@@ -1,9 +1,9 @@
 $(function () {
     const videoSrc = [
-        'https://www.youtube.com/embed/h5UokQ9Z-is?autoplay=1', //plugin https://youtu.be/h5UokQ9Z-is
+        'https://www.youtube.com/embed/qU8n6y4zeSQ?autoplay=1', //plugin https://youtu.be/h5UokQ9Z-is https://youtu.be/qU8n6y4zeSQ
         'https://www.youtube.com/embed/NhLqgDJjVpI?autoplay=1', //japanese https://youtube.com/shorts/NhLqgDJjVpI
-        'https://www.youtube.com/embed/NMc4uks9lK0?autoplay=1', //title sequence
-        'https://www.youtube.com/embed/X_6qYiU8al4?autoplay=1', //르블랑 
+        'https://www.youtube.com/embed/NMc4uks9lK0?autoplay=1', //title sequence https://youtu.be/NMc4uks9lK0
+        'https://www.youtube.com/embed/X_6qYiU8al4?autoplay=1', //르블랑 https://youtu.be/X_6qYiU8al4
         'https://www.youtube.com/embed/H8jSDsJ3shw?autoplay=1', //인터뷰 https://youtube.com/shorts/H8jSDsJ3shw
         'https://www.youtube.com/embed/H8jSDsJ3shw?autoplay=1', //interview https://youtube.com/shorts/H8jSDsJ3shw
     ];
